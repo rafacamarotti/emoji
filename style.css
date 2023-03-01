@@ -1,0 +1,26 @@
+body{
+    color:white;
+    background: #c0d3ff;
+}
+span{
+    font-sixe:30px;
+}
+#camera, #result{
+    border:2px dashed black;
+    width:350px;
+    height:300px;
+}
+.emoji{
+    font-size:48px;
+}
+.heading{
+    font-size:48px;
+    border-radius:10px
+    letter-spacing:10px;
+}
+label{
+    font-size:14px/
+    color: #62b33a;
+    border-radius:10px;
+    background-color:white;
+}
