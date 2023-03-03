@@ -20,7 +20,7 @@ function modelloaded(){
 function speak(){
     var synth = window.speechSynthesis;
     speak_data_1= "esse é o seu emoji: ";
-    var utterThis=  new speechSynthesisUtterance(speak_data_1);
+    var utterThis=  new SpeechSynthesisUtterance(speak_data_1);
     synth.speak(utterThis); 
 }
 function check(){
