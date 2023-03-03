@@ -27,3 +27,25 @@ function check(){
     img = document.getElementById('captured_image');
     classifier.classify(img, gotresult);
 }
+function gotresult(error, results){
+if(error){
+    console.error(error);
+}else{
+    console.log(results);
+     emoji = results[0].label;
+
+     speak();
+     if(results[0].label == "emoji 1"){
+        document.getElementById("update_emoji").innerHTML = "✌";
+     }
+     if(results[0].label == "emoji 2"){
+        document.getElementById("update_emoji").innerHTML = "👍";
+     }
+     if(results[0].label == "emoji 3"){
+        document.getElementById("update_emoji").innerHTML = "🤏";
+     }
+     if(results[0].label == "emoji 4"){
+        document.getElementById("update_emoji").innerHTML = "🤟";
+     }
+} 
+}
